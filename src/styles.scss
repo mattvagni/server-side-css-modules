@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+}
+
+.button {
+    color: red;
+
+    & :hover {
+        color: green;
+    }
+}

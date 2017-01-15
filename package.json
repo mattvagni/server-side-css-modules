@@ -1,0 +1,30 @@
+{
+  "name": "server-side-css-modules",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "build:client": "webpack --config webpack.config.js",
+    "build:server": "BABEL_ENV=server babel src --out-dir ./build/server",
+    "watch:client": "npm run build:client -- --watch",
+    "watch:server": "npm run build:server -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattvagni/server-side-css-modules.git"
+  },
+  "homepage": "https://github.com/mattvagni/server-side-css-modules#readme",
+  "dependencies": {
+    "autoprefixer": "^6.6.1",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-css-modules-transform": "^1.1.0",
+    "babel-preset-es2015": "^6.18.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "node-sass": "^4.3.0",
+    "postcss-loader": "^1.2.2",
+    "sass-loader": "^4.1.1",
+    "webpack": "^2.2.0-rc.3"
+  }
+}
